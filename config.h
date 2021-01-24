@@ -2,15 +2,28 @@
 #define DELIMITER "  "
 #define CLICKABLE_BLOCKS
 
+//Modify this file to change what commands output to your statusbar, and recompile using the make command.
 const Block blocks[] = {
-	BLOCK("sb-mail",    1800, 17),
-	BLOCK("sb-music",   0,    18),
-	BLOCK("sb-disk",    1800, 19),
-	BLOCK("sb-memory",  10,   20),
-	BLOCK("sb-loadavg", 5,    21),
-	BLOCK("sb-mic",     0,    26),
-	BLOCK("sb-record",  0,    27),
-	BLOCK("sb-volume",  0,    22),
-	BLOCK("sb-battery", 5,    23),
-	BLOCK("sb-date",    1,    24)
+          /*Command*/	/*Update Interval*/	/*Update Signal*/
+	/* BLOCK("sb-kbselect", 0, 30), */
+	BLOCK("cat /tmp/recordingicon 2>/dev/null", 0, 9),
+	/* BLOCK("sb-tasks", 10, 26), */
+	/* BLOCK("sb-music", 0, 11), */
+	/* BLOCK("sb-pacpackages", 0, 8), */
+	BLOCK("sb-susepackages", 0, 8),
+	/* BLOCK("sb-news", 0, 6), */
+	/* BLOCK("sb-crypto", 0, 13), */
+	/* BLOCK("sb-price btc Bitcoin", 9000, 21), */
+	/* BLOCK("sb-torrent", 20, 7), */
+	/* BLOCK("sb-memory", 10, 14), */
+	/* BLOCK("sb-moonphase", 18000, 17), */
+	BLOCK("sb-forecast", 18000, 5),
+	BLOCK("sb-mailbox", 180, 12),
+	BLOCK("sb-cpu", 1, 18),
+	/* BLOCK("sb-nettraf", 1, 16), */
+	BLOCK("sb-volume", 0, 10),
+	BLOCK("sb-battery", 5, 3),
+	BLOCK("sb-clock", 60, 1),
+	BLOCK("sb-internet", 5, 4),
+	/* BLOCK("sb-help-icon", 0, 15), */
 };
