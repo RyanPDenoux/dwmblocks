@@ -160,8 +160,8 @@ void setupsignals()
 	sa.sa_flags = SA_SIGINFO;
 	sigaction(SIGUSR1, &sa, NULL);
 	struct sigaction sigchld_action = {
-  		.sa_handler = SIG_DFL,
-  		.sa_flags = SA_NOCLDWAIT
+			.sa_handler = SIG_DFL,
+			.sa_flags = SA_NOCLDWAIT
 	};
 	sigaction(SIGCHLD, &sigchld_action, NULL);
 
@@ -172,11 +172,11 @@ int getstatus(char *str, char *last)
 {
 	strcpy(last, str);
 	str[0] = '\0';
-    for(int i = 0; i < LENGTH(blocks); i++) {
+		for(int i = 0; i < LENGTH(blocks); i++) {
 		strcat(str, statusbar[i]);
-        if (i == LENGTH(blocks) - 1)
-            strcat(str, " ");
-    }
+				if (i == LENGTH(blocks) - 1)
+						strcat(str, " ");
+		}
 	str[strlen(str)-1] = '\0';
 	return strcmp(str, last);//0 if they are the same
 }
