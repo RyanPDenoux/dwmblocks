@@ -9,8 +9,8 @@ const Block blocks[] = {
 	BLOCK("cat /tmp/recordingicon 2>/dev/null", 0, 9),
 	/* BLOCK("sb-tasks", 10, 26), */
 	/* BLOCK("sb-music", 0, 11), */
-	/* BLOCK("sb-pacpackages", 0, 8), */
-	BLOCK("sb-susepackages", 0, 8),
+	BLOCK("sb-pacpackages", 0, 8),
+	/* BLOCK("sb-susepackages", 0, 8), */
 	/* BLOCK("sb-news", 0, 6), */
 	/* BLOCK("sb-crypto", 0, 13), */
 	/* BLOCK("sb-price btc Bitcoin", 9000, 21), */
@@ -23,7 +23,7 @@ const Block blocks[] = {
 	/* BLOCK("sb-nettraf", 1, 16), */
 	BLOCK("sb-volume", 0, 10),
 	BLOCK("sb-battery", 5, 3),
-	BLOCK("sb-clock", 60, 1),
 	BLOCK("sb-internet", 5, 4),
+	BLOCK("sb-clock", 60, 1),
 	/* BLOCK("sb-help-icon", 0, 15), */
 };
