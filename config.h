@@ -1,5 +1,5 @@
 #define CMDLENGTH 45
-#define DELIMITER "  "
+#define DELIMITER " "
 #define CLICKABLE_BLOCKS
 
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
@@ -22,7 +22,7 @@ const Block blocks[] = {
 	/* BLOCK("sb-nettraf"           , 1     , 16) , */
 	/* BLOCK("sb-battery"           , 5     , 3)  , */
 	BLOCK("sb-internet"          , 5     , 4)  ,
-	BLOCK("sb-clock"             , 60    , 1)  ,
+	BLOCK("sb-clock"             , 1     , 1)  ,
 	BLOCK("sb-kbselect"          , 0     , 30) ,
 	/* BLOCK("sb-help-icon"         , 0     , 15) , */
 	BLOCK("sb-power-status"      , 0     , 15) ,
